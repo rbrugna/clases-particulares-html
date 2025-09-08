@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Clases particulares</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <h1>Agenda de Clases particulares</h1>
+        <p> Aprende de forma facil y organizada </p>
+        <nav> <!--BLOQUE DE NAVEGACION-->
+            <a href="#inicio">Inicio</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#inscripcion">Inscripcion</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    
+    <!--Contenido principal-->
+    <main>
+        <!--SECCION inicio-->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <h3>Bienvenidos</h3>
+            <p>Hola, soy <strong>Cynthia Fernandez</strong>, una madre que ama dar clases.
+        </section>
+
+        <!--SECCION AGENDA-->
+        <section id="agenda">
+            <h2> Agenda de alumnos </h2>
+            <table border="1">
+                <thead> <!--Cabecera-->
+                    <tr>
+                        <th>Alumno</th>
+                        <th>Materia</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaAlumnos">
+                    <tr>
+                        <td> Rosario Brugna </td>
+                        <td>Matematica</td>
+                        <td>Lunes</td>
+                        <td>17:00</td>
+                    </tr>
+                    <tr>
+                        <td> Delfina Brugna </td>
+                        <td>Fisica</td>
+                        <td>Miercoles</td>
+                        <td>19:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--SECCION INSCRIPCION-->
+        <section id="inscripcion">
+        <h2>Formulario de inscripcion</h2>
+        <form id="formInscripcion">
+
+            <label>Nombre del alumno: </label><br>
+            <input type="text" id="nombre" required><br><br>
+            
+            <label>Materia:</label><br>
+            <input type="text" id="materia" required><br><br>
+
+            <lable>Fecha y hora: </lable><br>
+            <input type="datetime-local" id="fecha" required><br><br>
+
+            <input type="submit" value="Inscribirse">
+
+        </from>
+        </section>
+
+
+        <!--SECCION pendiente-->
+        <section id="pendientes">
+            <h2>Clases pendientes de confirmacion: </h2>
+            <ul id="listaPendientes">
+                <li>Maria Garcia - Ingles - Horario a confirmar </li>
+            </ul>
+        </section>
+    </main>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <p>© 2025 Agenda de Clases particulares | Profesora Particular </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
